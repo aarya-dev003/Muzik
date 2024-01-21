@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "506287828400",
+    "project_id": "music-player-b357f",
+    "storage_bucket": "music-player-b357f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506287828400:android:3ea5e9343c89721e8efa75",
+        "android_client_info": {
+          "package_name": "com.example.musicplayer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBokcoGqZzqzPV07NLsYgGi-6pCZqpP1-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506287828400:android:6f3da016668f568d8efa75",
+        "android_client_info": {
+          "package_name": "com.example.muzik"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBokcoGqZzqzPV07NLsYgGi-6pCZqpP1-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

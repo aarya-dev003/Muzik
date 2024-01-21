@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Base.Theme.Muzik"
+    android:background="@drawable/background_gradient"
+    tools:context=".activities.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/straigth_L"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:textStyle="bold"
+            android:layout_marginVertical="300dp"
+            android:layout_marginStart="48dp"
+            android:layout_alignParentStart="true"
+            android:textSize="84dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/muzictv"
+            android:fontFamily="@font/fontleroy_brown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MUZIK"
+            android:textColor="@color/white"
+            android:layout_marginStart="50dp"
+            android:layout_alignStart="@+id/straigth_L"
+            android:layout_alignEnd="@+id/inverted_L"
+            android:layout_marginVertical="308dp"
+            android:textSize="72dp" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/inverted_L"
+            android:rotationX="180"
+            android:rotationY="180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="280dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="84dp"
+            android:textColor="@color/white"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

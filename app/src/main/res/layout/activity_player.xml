@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+
+    tools:context=".activities.PlayerActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_RL"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/down_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/down_arrow"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_alignParentStart="true"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shuffle"
+            android:src="@drawable/shuffle_btn"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_toLeftOf="@+id/like_btn"
+            />
+
+        <ImageButton
+            android:layout_toLeftOf="@+id/dropdown_menu"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:src="@drawable/heart"
+            android:layout_height="wrap_content"
+            android:id="@+id/like_btn"
+            />
+        <ImageButton
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dropdown_menu"
+            android:src="@drawable/dots_player"
+            android:backgroundTint="@android:color/transparent"
+            />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/player_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_RL"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="48dp"
+        >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/song_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:scaleType="centerCrop"
+                android:elevation="5dp"
+                android:src="@drawable/muzik"
+                />
+            <ImageView
+                android:background="@android:color/transparent"
+                android:layout_width="220dp"
+                android:visibility="invisible"
+                android:layout_height="220dp"
+                android:id="@+id/song_gif_image_view"
+                android:layout_gravity="center"
+                />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/song_title_text_view"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Song Name"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+        <TextView
+            android:id="@+id/song_subtitle_text_view"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Album"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <androidx.media3.ui.PlayerView
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/player_control"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:hide_on_touch="false"
+            app:use_controller="true"
+            app:show_timeout="0"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
