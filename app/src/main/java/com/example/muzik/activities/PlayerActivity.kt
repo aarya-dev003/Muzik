@@ -1,6 +1,5 @@
 package com.example.muzik.activities
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.OptIn
@@ -41,8 +40,8 @@ class PlayerActivity : AppCompatActivity() {
             binding.playerControl.player = exoPlayer
             binding.playerControl.showController()
             exoPlayer.addListener(playerListner)
-            val shutterView = binding.playerControl.findViewById<View>(androidx.media3.ui.R.id.exo_shutter)
-            shutterView.setBackgroundColor(Color.parseColor("#19165b"))
+//            val shutterView = binding.playerControl.findViewById<View>(androidx.media3.ui.R.id.exo_shutter)
+//            shutterView.setBackgroundColor(Color.parseColor("#19165b"))
         }
 
     }

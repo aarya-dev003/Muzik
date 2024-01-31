@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:theme="@style/Base.Theme.Muzik"
     android:background="@drawable/background_gradient"
+    android:gravity="center_vertical"
     tools:context=".activities.SplashActivity">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true">
+        android:gravity="center_horizontal"
+       >
 
         <TextView
             android:visibility="invisible"
+            android:layout_marginTop="32dp"
             android:id="@+id/straigth_L"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="L"
             android:textStyle="bold"
-            android:layout_marginVertical="300dp"
-            android:layout_marginStart="48dp"
-            android:layout_alignParentStart="true"
+            android:layout_margin="8dp"
             android:textSize="84dp"
             android:textColor="@color/white"
             />
@@ -34,31 +34,27 @@
             android:fontFamily="@font/fontleroy_brown"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MUZIK"
+            android:text="Audioly"
+            android:layout_margin="8dp"
             android:textColor="@color/white"
-            android:layout_marginStart="50dp"
-            android:layout_alignStart="@+id/straigth_L"
-            android:layout_alignEnd="@+id/inverted_L"
-            android:layout_marginVertical="308dp"
             android:textSize="72dp" />
 
         <TextView
-            android:visibility="invisible"
+            android:layout_marginBottom="32dp"
             android:id="@+id/inverted_L"
             android:rotationX="180"
             android:rotationY="180"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="L"
+            android:visibility="invisible"
             android:textStyle="bold"
-            android:layout_alignParentEnd="true"
-            android:layout_marginVertical="280dp"
-            android:layout_marginEnd="48dp"
+            android:layout_margin="8dp"
             android:textSize="84dp"
             android:textColor="@color/white"
             />
 
 
-    </RelativeLayout>
+    </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
