@@ -1,6 +1,8 @@
 name: Android Release
 
 on:
+  release:
+    types: "*"
   push:
     tags:
       - "*"
@@ -48,3 +50,4 @@ jobs:
           artifact: "app/build/outputs/apk/debug/app-debug.apk"
           allowUpdates: true
           token: ${{ secrets.GITHUB_TOKEN }}
+          env: app
