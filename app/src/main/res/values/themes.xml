@@ -9,7 +9,7 @@
 
 
     <style name="Theme.Muzik" parent="Base.Theme.Muzik" >
-        <item name="android:fontFamily" >@font/fontleroy_brown</item>
+        <item name="android:fontFamily" >@font/mukta_regular</item>
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorPrimaryDark">@color/primaryDarkColor</item>
         <item name="colorAccent">@color/accentColor</item>

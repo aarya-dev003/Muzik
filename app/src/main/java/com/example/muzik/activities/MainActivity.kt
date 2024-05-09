@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         getCategories()
         setupSections("section_1", binding.TrendingRelativeLayout,binding.trendingTextView, binding.trendingRecyclerView)
-        setupSections("section_3", binding.ClassicRelativeLayout,binding.ClassicTextView, binding.ClassicRecyclerView)
+        setupSections("section_4", binding.ClassicRelativeLayout,binding.ClassicTextView, binding.ClassicRecyclerView)
         setupSections("section_2", binding.likesRelativeLayout,binding.likesTextView, binding.likesRecyclerView)
 
 

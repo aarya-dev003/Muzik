@@ -31,7 +31,7 @@
             android:layout_toLeftOf="@+id/search_btn"
             android:layout_alignParentTop="true"
             android:gravity="center"
-            android:fontFamily="@font/fontleroy_brown"
+
             android:text="My Playlist"
             android:textColor="@color/white"
             android:textSize="48sp"

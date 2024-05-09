@@ -16,7 +16,8 @@
        >
 
         <TextView
-            android:visibility="invisible"
+            android:fontFamily="@font/mukta_light"
+            android:layout_gravity="fill_vertical"
             android:layout_marginTop="32dp"
             android:id="@+id/straigth_L"
             android:layout_width="wrap_content"
@@ -29,9 +30,9 @@
             />
 
         <TextView
-            android:visibility="invisible"
+
             android:id="@+id/muzictv"
-            android:fontFamily="@font/fontleroy_brown"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Audioly"
@@ -40,6 +41,7 @@
             android:textSize="72dp" />
 
         <TextView
+            android:layout_gravity="fill_vertical"
             android:layout_marginBottom="32dp"
             android:id="@+id/inverted_L"
             android:rotationX="180"
@@ -47,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="L"
-            android:visibility="invisible"
+            android:fontFamily="@font/mukta_light"
             android:textStyle="bold"
             android:layout_margin="8dp"
             android:textSize="84dp"
